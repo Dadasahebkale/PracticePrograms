@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.dktech.AddToCartTest"/>
+      <class name="com.calender.CalenderDemo"/>
+      <class name="com.dktech.CalenderExample"/>
+      <class name="com.window.WindowTab"/>
+      <class name="com.dktech.GoogleTitleTest"/>
+      <class name="com.pagination.FilterDemo"/>
+      <class name="com.dktech.WebTable"/>
+      <class name="com.stream.StreamConcepts"/>
+      <class name="com.dktech.SelectUsingCustom"/>
+      <class name="com.stream.StreamDemo"/>
+      <class name="com.sslcert.SSLCertificateDemo"/>
+      <class name="com.dktech.SelectDropDownSpicejet"/>
+      <class name="com.pagination.Google"/>
+      <class name="com.links.LinksTestDemo"/>
+      <class name="com.dktech.DataTable"/>
+      <class name="com.dktech.TableTest"/>
+      <class name="com.pagination.FriendlyLocators"/>
+      <class name="com.dktech.SelectDropDown"/>
+      <class name="com.calender.MakeMyTrip"/>
+      <class name="com.scroll.ScrollWindowAndTable"/>
+      <class name="com.dktech.WebDynamicTable"/>
+      <class name="com.window.LimitedDriverAndLinks"/>
+      <class name="com.dktech.WebTableTest"/>
+      <class name="com.screenshot.ScreenShotDemo"/>
+      <class name="com.window.GrabTheEmailId"/>
+      <class name="com.actions.ActionClassDemo"/>
+      <class name="com.dktech.FileDownLoaded"/>
+      <class name="com.width.WidthAndHight"/>
+      <class name="com.dktech.LoopingThroughTableElements"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

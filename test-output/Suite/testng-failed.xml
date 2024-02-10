@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.pagination.FilterDemo">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.pagination.FilterDemo -->
+      <class name="com.window.LimitedDriverAndLinks">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.window.LimitedDriverAndLinks -->
+      <class name="com.dktech.SelectUsingCustom">
+        <methods>
+          <include name="tearDown"/>
+          <include name="list"/>
+        </methods>
+      </class> <!-- com.dktech.SelectUsingCustom -->
+      <class name="com.dktech.WebDynamicTable">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dktech.WebDynamicTable -->
+      <class name="com.dktech.WebTableTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="CheckBoxAndLinkTest"/>
+        </methods>
+      </class> <!-- com.dktech.WebTableTest -->
+      <class name="com.dktech.WebTable">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dktech.WebTable -->
+      <class name="com.dktech.SelectDropDown">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dktech.SelectDropDown -->
+      <class name="com.scroll.ScrollWindowAndTable">
+        <methods>
+          <include name="teadDown"/>
+        </methods>
+      </class> <!-- com.scroll.ScrollWindowAndTable -->
+      <class name="com.dktech.FileDownLoaded">
+        <methods>
+          <include name="tearDown"/>
+          <include name="downloadTest"/>
+        </methods>
+      </class> <!-- com.dktech.FileDownLoaded -->
+      <class name="com.dktech.GoogleTitleTest">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dktech.GoogleTitleTest -->
+      <class name="com.pagination.FriendlyLocators">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.pagination.FriendlyLocators -->
+      <class name="com.calender.CalenderDemo">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="selectCalenderDate"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.calender.CalenderDemo -->
+      <class name="com.pagination.Google">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.pagination.Google -->
+      <class name="com.links.LinksTestDemo">
+        <methods>
+          <include name="lanuchBrowser"/>
+          <include name="tearDown"/>
+          <include name="allBrokenLinkTest"/>
+        </methods>
+      </class> <!-- com.links.LinksTestDemo -->
+      <class name="com.window.GrabTheEmailId">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.window.GrabTheEmailId -->
+      <class name="com.calender.MakeMyTrip">
+        <methods>
+          <include name="tearDown"/>
+          <include name="lanuchBrowser"/>
+          <include name="calnder"/>
+        </methods>
+      </class> <!-- com.calender.MakeMyTrip -->
+      <class name="com.dktech.LoopingThroughTableElements">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dktech.LoopingThroughTableElements -->
+      <class name="com.dktech.SelectDropDownSpicejet">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.dktech.SelectDropDownSpicejet -->
+      <class name="com.width.WidthAndHight">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.width.WidthAndHight -->
+      <class name="com.actions.ActionClassDemo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="capitalLetterTest"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.actions.ActionClassDemo -->
+      <class name="com.screenshot.ScreenShotDemo">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.screenshot.ScreenShotDemo -->
+      <class name="com.dktech.TableTest">
+        <methods>
+          <include name="excelTestData"/>
+          <include name="tearTown"/>
+        </methods>
+      </class> <!-- com.dktech.TableTest -->
+      <class name="com.sslcert.SSLCertificateDemo">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.sslcert.SSLCertificateDemo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
