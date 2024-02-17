@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 
 public class BrokenLinks {
 public static WebDriver driver;
-public static String u="https://www.vedantu.com/";
+public static String u="https://www.amazon.in/";
 	@BeforeTest
 	public void launchBrowser() {
 		ChromeOptions ops=new ChromeOptions();
@@ -31,15 +31,18 @@ public static String u="https://www.vedantu.com/";
 	@Test
 	public void brokeLinkTest() {
 		List<WebElement> allLinks=driver.findElements(By.tagName("a"));
-		System.out.println("WebSite name : "+u+" Total links "+allLinks.size());
+		System.out.println("Total links "+allLinks.size());
 		List<String> urlLinks=new ArrayList<String>();
 		
 		for(WebElement e :allLinks) {
 			String url=e.getAttribute("href");
-			//urlLinks.add(url);
-			verifyLikns(url);
+			urlLinks.add(url);
+			//verifyLikns(url);
 		}
+		long startTime=System.currentTimeMillis();
 		urlLinks.parallelStream().forEach(e->verifyLikns(e));
+		long EndTime=System.currentTimeMillis();
+		System.out.println("Totla time "+(EndTime-startTime));
 	}
 	public static void verifyLikns(String urlLinks) {
 		try {

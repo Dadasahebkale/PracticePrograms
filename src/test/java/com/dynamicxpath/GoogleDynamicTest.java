@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class GoogleDynamic {
+public class GoogleDynamicTest {
 
 	public static void main(String[] args) {
 		
@@ -19,7 +19,7 @@ public class GoogleDynamic {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.google.com");
 
-		driver.findElement(By.name("q")).sendKeys("java");
+		driver.findElement(By.name("q")).sendKeys("Movies");
 		
 
 		List<WebElement> list=driver.findElements(By.xpath("//ul[@role='listbox']//li/descendant::div[@class='wM6W7d']"));
@@ -29,13 +29,13 @@ public class GoogleDynamic {
 
 		System.out.println(list.get(i).getText());
 
-		if(list.get(i).getText().equals("java compiler")){
+		if(list.get(i).getText().equals("movies")){
 			list.get(i).click();
 			break;	
 		}
 		
 		}
-		driver.quit();
+
 	}
 
 }
