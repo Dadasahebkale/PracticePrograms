@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dynamicxpath.JavaTutorialSearch">
+      <class name="com.selenium.JavaScriptTest">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="javaTutorialTest"/>
+          <include name="getSearchTest"/>
+          <include name="launchBrower"/>
         </methods>
-      </class> <!-- com.dynamicxpath.JavaTutorialSearch -->
+      </class> <!-- com.selenium.JavaScriptTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

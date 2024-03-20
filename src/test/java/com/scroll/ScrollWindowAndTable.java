@@ -38,7 +38,7 @@ public void WindowScrollTest() {
 }
 @Test(priority = 2)
 public void ScrollTable() {
-	// capture the class name for the cssSelector
+	//capture the class name for the cssSelector
 	//open the console
 	//type document.querySelector
 	//paste class name in double inverted commas

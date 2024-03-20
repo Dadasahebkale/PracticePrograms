@@ -14,7 +14,7 @@ public class HashMapToArrayList {
 		comMap.put("Flipkart", 9000);
 		
 		for(int i=0;i<comMap.size();i++) {
-			System.out.print(comMap);
+			System.out.println(comMap);
 		}
 	}
 

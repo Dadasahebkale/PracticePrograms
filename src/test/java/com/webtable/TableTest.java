@@ -11,7 +11,7 @@ public class TableTest {
 	public static String url = "https://www.w3schools.com/html/html_tables.asp";
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "C://Chromedriver//chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C://Chromedriver//chromedriver.exe");
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();

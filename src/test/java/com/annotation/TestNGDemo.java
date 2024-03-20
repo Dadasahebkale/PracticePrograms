@@ -8,8 +8,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import io.cucumber.java.After;
-
 public class TestNGDemo {
 	@BeforeSuite
 	public void BeforeSuiteTest() {
