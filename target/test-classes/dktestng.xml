@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Google Testing" thread-count="2" parallel="methods">
+  <test  name="Google Testing">
+    <classes>
+      <class name="com.testng.BeforeAnnotationTest"/>
+      <class name="com.testng.ExcelData"/>
+      <class name="com.testng.Test"/>
+      <class name="com.testng.TestDemo"/>
+    </classes>
+  </test> <!-- Test Parallel -->
+</suite> <!-- ParallelTesting -->

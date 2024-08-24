@@ -16,7 +16,7 @@ public class BrokenLinkTest {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver","C://Chromedriver//chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver","C://Chromedriver//chromedriver.exe");
 		ChromeOptions ops=new ChromeOptions();
 		ops.addArguments("--headless=new");
 		WebDriver driver=new ChromeDriver(ops);

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="10" parallel="classes" name="Suite">
+  <test thread-count="10" parallel="classes" name="Test">
+	  <parameter name="url" value="https://cosmocode.io/automation-practice-webtable/"></parameter>
+	  <parameter name="countryName" value="Andorra"></parameter>
+    <classes>
+      <class name="com.webtable.Parameters"/>
+      <class name="com.webtable.TableTestDemo"/>
+      <class name="com.webtable.WebTableTestMukesh"/>
+      <class name="com.webtable.WebTableTest"/>
+      <class name="com.webtable.WebTable"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

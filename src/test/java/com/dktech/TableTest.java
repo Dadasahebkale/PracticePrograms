@@ -18,7 +18,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.qa.util.ExcelReader;
 
 public class TableTest {
 	public static String url="D:\\CucumberLatest\\Automation\\src\\test\\resources\\properyfile\\config.properties";
@@ -26,7 +25,6 @@ public class TableTest {
 	public static ChromeOptions ops;
 	public static Properties prop;
 	public static FileInputStream fis;
-	public static ExcelReader excel;
 	public static String testCaseName;
 	public static Hashtable<String, String> run_mode=new Hashtable<String, String>();
 	@Test(priority = 1)

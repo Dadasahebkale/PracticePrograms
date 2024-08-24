@@ -8,6 +8,7 @@ public class EvenAndOdd {
 	public static void main(String[] args) {
 		
 		getArrayList();
+		
 	}
 	
 	public static void getArrayList() {

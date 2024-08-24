@@ -20,12 +20,12 @@ import org.testng.annotations.Test;
 public class SelectWithSwitchCase {
 
 	public static WebDriver driver;
-	public static String url="https://chercher.tech/practice/practice-dropdowns-selenium-webdriver";
+	public static String url="https://demo.guru99.com/test/newtours/register.php";
 	
 	@BeforeTest
 	public void launchBrower() {
 		ChromeOptions ops=new ChromeOptions();
-		ops.setBrowserVersion("117");
+		ops.setBrowserVersion("118");
 		driver=new ChromeDriver(ops);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -33,10 +33,11 @@ public class SelectWithSwitchCase {
 }
 	@Test
 	public void TestDemo() {
-		By ProductName=By.xpath("//select[@id='first']");
-		By AnimalName=By.xpath("//select[@id='animals']");
-		selectDropDownValue(ProductName,DropDown.INDEX.toString(),"2");
-		selectDropDownValue(AnimalName, DropDown.VisibleText.toString(), "Avatar");
+		By ProductName=By.xpath("//select[@name='country']");
+		//By AnimalName=By.xpath("//select[@id='animals']");
+		//selectDropDownValue(ProductName,DropDown.INDEX.toString(),"3");
+		//selectDropDownValue(ProductName, DropDown.VisibleText.toString(), "ALGERIA");
+		selectDropDownValue(ProductName, DropDown.VALUE.toString(), "ARUBA");
 	}
 	public static void selectDropDownValue(By locator,String type,String value) {
 		Select select=new Select(getElement(locator));

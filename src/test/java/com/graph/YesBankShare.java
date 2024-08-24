@@ -15,7 +15,7 @@ public static WebDriver driver;
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "C://Chromedriver//chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C://Chromedriver//chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.manage().window().maximize();

@@ -6,22 +6,22 @@ import java.util.Collections;
 public class EvenOddNumFromArray {
 
 	public static void main(String[] args) {
-	int[] myArray= {1,2,3,4,5,6,7,8,9,11,23,45,67,89,77,12};
-	ArrayList<Integer> evenList=new ArrayList<Integer>();
-	ArrayList<Integer> oddList=new ArrayList<Integer>();
+	int[] myArray= {1,2,3,4,5,6,7,8,9,10,12,34,55,67,89,65,23};
+	ArrayList<Integer> evenNum=new ArrayList<Integer>();
+	ArrayList<Integer> oddNum=new ArrayList<Integer>();
 	for(int i=0;i<myArray.length;i++) {
 		if(myArray[i]%2==0) {
-			evenList.add(myArray[i]);
+			evenNum.add(myArray[i]);
 		}else {
-			oddList.add(myArray[i]);
+			oddNum.add(myArray[i]);
 		}
 	}
-	Collections.sort(evenList);
-	Collections.sort(oddList);
+	Collections.sort(evenNum);
+	Collections.sort(oddNum);
 	
-	for(int e : evenList)
+	for(int e : evenNum)
 		System.out.print(e+" ");
-	for(int o : oddList)
+	for(int o : oddNum)
 		System.out.print(o+" ");
 	}
 }

@@ -8,18 +8,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.window.WindowHandles;
+
 public class GoogleDynamic {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver","C://Chromedriver//chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver","C://Chromedriver//chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.google.com");
 
-		driver.findElement(By.name("q")).sendKeys("java");
+		driver.findElement(By.name("q")).sendKeys("cricbuzz");
 		
 
 		List<WebElement> list=driver.findElements(By.xpath("//ul[@role='listbox']//li/descendant::div[@class='wM6W7d']"));
@@ -29,7 +31,8 @@ public class GoogleDynamic {
 
 		System.out.println(list.get(i).getText());
 
-		if(list.get(i).getText().equals("java compiler")){
+		if(list.get(i).getText().equals("cricbuzz ind vs sl")){
+			
 			list.get(i).click();
 			break;	
 		}
