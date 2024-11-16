@@ -72,5 +72,12 @@ public class WaitTest {
 		    
 		    }
 	
-	
+	public static void webWait() {
+		 WebElement revealed = driver.findElement(By.id("revealed"));
+		    driver.findElement(By.id("reveal")).click();
+
+		    Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+		    wait.until(ExpectedConditions.visibilityOf((WebElement) By.xpath("//input[@class='abc']")));
+		    wait.until(d -> revealed.isDisplayed());
+	}
 }

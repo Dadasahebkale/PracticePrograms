@@ -1,5 +1,9 @@
 package com.dynamicxpath;
 
+import java.net.HttpURLConnection;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -13,7 +17,7 @@ public class SearchOnFlipCart {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.setProperty("webdriver.chrome.driver", "C://Chromedriver//chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C://Chromedriver//chromedriver.exe");
 		
 		driver =new ChromeDriver();
 		driver.manage().window().maximize();
@@ -25,13 +29,20 @@ public class SearchOnFlipCart {
 		searchProduct.sendKeys("Iphone 14");
 		WebElement searchButton=driver.findElement(By.xpath("//button[@type='submit']"));
 		searchButton.click();
-		String modelName="Apple iPhone 14 (Yellow, 128 GB)";
+		String modelName="Apple iPhone 16 Pro Max (Natural Titanium, 256 GB";
 		String productName=driver.findElement(By.xpath("//div[@class='col col-7-12']/descendant::*[text()='"+modelName+"']")).getText();
 	   String price=driver.findElement(By.xpath("//*[contains(text(),'"+modelName+"')]//parent::div/parent::div/child::div[@class='col col-5-12 nlI3QM']/descendant::div[@class='_30jeq3 _1_WHN1']")).getText();
 		
 	  System.out.println("Model Name is ==>"+ productName +" and price is ::=> "+price);
 		//*[contains(text(),'Apple iPhone 14 (Blue, 128 GB)')]//parent::div/parent::div/child::div[@class='col col-5-12 nlI3QM']/descendant::div[@class='_30jeq3 _1_WHN1']
 	//div[@class='col col-7-12']/descendant::*[text()='Apple iPhone 14 (Blue, 128 GB)']
+	
+	
 	}
+//	public static void getUrl(String url) throws URISyntaxException {
+//		URL url=new URL(url);	
+//		HttpURLConnection htp=(HttpURLConnection)url.openConnection();
+//		
+	//}
 
 }

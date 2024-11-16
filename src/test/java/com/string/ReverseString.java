@@ -5,7 +5,7 @@ public class ReverseString {
 	public static void main(String[] args) {
 		//getReverString("Apple and Orange are brothers");
 		//getReverString("Ganesh Kale");
-		eachWord("Apple and Orange are brothers");
+		eachWord("Apple And Orange Are Brothers");
 		removeVowels("Apple and Orange are brothers");
 	}
 	

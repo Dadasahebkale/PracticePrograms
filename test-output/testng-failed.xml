@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.excel.ExcelData">
+      <class name="com.calender.CalenderDemo">
         <methods>
-          <include name="ExcelDataDemo"/>
+          <include name="launchBrowser"/>
+          <include name="selectCalenderDate"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.excel.ExcelData -->
+      </class> <!-- com.calender.CalenderDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -15,7 +15,7 @@ static String CountyName="The Bahamas";
 		try {
 		String url="https://cosmocode.io/automation-practice-webtable";
 		ChromeOptions ops=new ChromeOptions();
-		ops.setBrowserVersion("118");
+		ops.setBrowserVersion("116");
 		driver=new ChromeDriver(ops);
 		driver.get(url);
 		driver.manage().window().maximize();

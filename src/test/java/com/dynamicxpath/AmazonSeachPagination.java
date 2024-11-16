@@ -23,6 +23,7 @@ public class AmazonSeachPagination {
 		// "C://Chromedriver//chromedriver.exe");
 		ChromeOptions ops = new ChromeOptions();
 		ops.addArguments("--incognito");
+		ops.setBrowserVersion("118");
 		driver = new ChromeDriver(ops);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
@@ -43,7 +44,7 @@ public class AmazonSeachPagination {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,325)");
 
-		String product = "Apple iPhone 14 Plus (512 GB) - Blue";
+		String product = "Apple iPhone 15 Pro Max (256 GB) - Black Titanium";
 
 		for (int i = 0; i < AllProducts.size(); i++) {
 
@@ -53,7 +54,7 @@ public class AmazonSeachPagination {
 			}
 
 		}
-		driver.quit();
+	driver.quit();
 	}
 
 }

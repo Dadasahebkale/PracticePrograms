@@ -19,7 +19,7 @@ public static WebDriver driver;
 	@BeforeTest
 	public void launchBrowser() {
 		ChromeOptions ops=new ChromeOptions();
-		ops.setBrowserVersion("117");
+		ops.setBrowserVersion("118");
 		driver=new ChromeDriver(ops);
 		driver.manage().window().maximize();
 		driver.get("https://www.path2usa.com/travel-companion/");

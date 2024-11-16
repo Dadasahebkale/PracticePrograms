@@ -12,7 +12,7 @@ import org.openqa.selenium.support.locators.RelativeLocator;
 public class LeftOfLocator {
 
 	public static void main(String[] args) {
-		String countryName="China";
+		String countryName="Afghanistan";
 		ChromeOptions ops=new ChromeOptions();
 		ops.setBrowserVersion("118");
 		WebDriver driver=new ChromeDriver(ops);
@@ -25,7 +25,6 @@ public class LeftOfLocator {
 		List<WebElement> text=driver.findElements(By.xpath("//*[text()='"+countryName+"']/parent::td/following-sibling::td"));
 		for(WebElement s : text)
 		System.out.println(s.getText());
-		
 		driver.quit();
 	}
 
