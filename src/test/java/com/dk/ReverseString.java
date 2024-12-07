@@ -8,13 +8,21 @@ public class ReverseString {
 
 	public static void main(String[] args) {
 		String s="We are here to play around java";
-		//String words[]=s.split(" ");
-		ArrayList<String> ss=new ArrayList<String>(Arrays.asList(s.split(" ")));
+		String words[]=s.split(" ");
+		ArrayList<String> ss=new ArrayList<String>();
+		for(int i=0;i<words.length;i++) {
+			ss.add(words[i]);
+			
+	
+			
+		}
 		ListIterator<String> l=ss.listIterator();
 		while(l.hasPrevious()) {
-			String k=l.previous();
-			System.out.println(k);
+		String sss=	l.previous();
+		System.out.println(sss);
 		}
+		
+			
 		
 	}
 

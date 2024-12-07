@@ -23,15 +23,21 @@ public class ActionClassDemo {
 		driver.get("https://www.flipkart.com/");
 		//Actions a=new Actions(driver);
 	}
-	@Test(priority = 2)
+	@Test(priority = 2,invocationCount = 6)
 	public void capitalLetterTest() throws InterruptedException {
 		Actions a=new Actions(driver);
 		WebElement search=driver.findElement(By.name("q"));
 		a.moveToElement(search).click().keyDown(Keys.SHIFT).sendKeys("ganesh").sendKeys(Keys.ENTER).build().perform();
-		Thread.sleep(2000);
+		a.moveToElement(search).click().keyDown(Keys.SHIFT).sendKeys("DADA").sendKeys(Keys.ENTER).build().perform();
+		a.moveToElement(search).click().keyDown(Keys.SHIFT).sendKeys("Pranav").sendKeys(Keys.ENTER).build().perform();
+		a.moveToElement(search).click().keyDown(Keys.SHIFT).sendKeys("Oviya").sendKeys(Keys.ENTER).build().perform();
+		a.moveToElement(search).click().keyDown(Keys.SHIFT).sendKeys("Welcome").sendKeys(Keys.ENTER).build().perform();
+		a.moveToElement(search).click().keyDown(Keys.SHIFT).sendKeys("welcome").sendKeys(Keys.ENTER).build().perform();
+		
 		WebElement move=driver.findElement(By.xpath("//span[contains(text(),'Login')]"));
-				//+ "//div/ul[@class='_3YjYK7 ecs1XG']"));
+//				//+ "//div/ul[@class='_3YjYK7 ecs1XG']"));
 		a.moveToElement(move).contextClick().build().perform();
+		
 	}
 	@Test(priority = 1)
 	public void actionTest() throws InterruptedException {

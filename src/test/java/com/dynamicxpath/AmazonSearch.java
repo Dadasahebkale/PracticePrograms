@@ -17,7 +17,8 @@ public class AmazonSearch {
 		
 		//System.setProperty("webdriver.chrome.driver", "C://Chromedriver//chromedriver.exe");
 		ChromeOptions ops=new ChromeOptions();
-		ops.addArguments("--headless=new");
+		//ops.addArguments("--headless=new");
+		ops.setBrowserVersion("117");
 		driver=new ChromeDriver(ops);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));

@@ -31,6 +31,7 @@ public class HashTableDemo {
 		//t.put(null, null); getting NullPointerException
 		System.out.println(t);//{105=Dada, 104=Pranav, 103=Pranvai, 102=Oviya, 101=Ganesh}
 		ConcurrentHashMap<Integer, String> chm=new ConcurrentHashMap<Integer, String>();
+		System.out.println("*********************************");
 		chm.putAll(t);
 		chm.put(106, "English");
 		chm.put(107, "Maths");
@@ -40,9 +41,10 @@ public class HashTableDemo {
 		//chm.put(null, "X"); getting NullPointerException
 		//chm.put(111, null); getting NullPointerException
 		
-		for(Map.Entry o : chm.entrySet()) {
+		for(Map.Entry<Integer,String> o : chm.entrySet()) {
 			System.out.println(o.getKey()+" : "+o.getValue());
 		}
+		System.out.println("*********************************");
 		// get method
 		System.out.println(t.get(102));//Oviya
 		// remove method

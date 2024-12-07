@@ -1,13 +1,13 @@
 package com.string;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class CountEachWord2 {
 
 	public static void main(String[] args) {
 		String str="java is programing langauage java java java java java";
-		Map<String, Integer> map=new HashMap<String, Integer>();
+		Map<String, Integer> map=new LinkedHashMap<String, Integer>();
 		Integer count=1;
 		String [] arr=str.split(" ");
 		for(int i=0;i<arr.length;i++) {
@@ -18,7 +18,7 @@ public class CountEachWord2 {
 			}
 		}
 		for(String x : map.keySet()) {
-			System.out.println("The count of words : "+x+" = "+map.get(x));
+			System.out.println(x+" : "+map.get(x));
 		}
 
 	}

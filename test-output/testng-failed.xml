@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.calender.CalenderDemo">
+      <class name="com.interview.ActionClass">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="selectCalenderDate"/>
+          <include name="dragAndDropOver"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.calender.CalenderDemo -->
+      </class> <!-- com.interview.ActionClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

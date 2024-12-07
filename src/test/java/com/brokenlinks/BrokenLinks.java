@@ -1,6 +1,7 @@
 package com.brokenlinks;
 
 import java.net.HttpURLConnection;
+import java.net.URI;
 import java.net.URL;
 import java.time.Duration;
 import java.util.ArrayList;
@@ -46,7 +47,8 @@ public static String u="https://www.amazon.in/";
 	}
 	public static void verifyLikns(String urlLinks) {
 		try {
-			URL url=new URL(urlLinks);
+			URI uri = new URI(urlLinks);
+			URL url = uri.toURL();
 			HttpURLConnection huc=(HttpURLConnection)url.openConnection();
 			huc.setConnectTimeout(5000);
 			huc.connect();

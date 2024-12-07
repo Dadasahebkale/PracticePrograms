@@ -29,6 +29,7 @@ public class FlipKartElectricWindow {
 		driver.findElement(By.xpath("//a[text()='Butterfly Rapid Electric Kettle']")).click();
 		System.out.println("Click on desired product");
 		String parentWindow = driver.getWindowHandle();
+		//driver.switchTo().newWindow(driver.findElement(By.xpath("hkjhkjh")));
 		Set<String> allWindows = driver.getWindowHandles();
 		Iterator<String> itr = allWindows.iterator();
 		while (itr.hasNext()) {
